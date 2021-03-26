@@ -1,0 +1,115 @@
+.detail {
+    /deep/ .van-icon,
+    /deep/ .van-nav-bar__text {
+        color: #71210e;
+    }
+    /deep/ .van-stepper__plus {
+        background-color: #71210e;
+    }
+
+    padding-bottom: 50px;
+
+    .pro-info {
+        background-color: #fff;
+        position: relative;
+        top: -20px;
+        border-radius: 10px 10px 0px 0px;
+        margin: 0px 10px;
+        padding: 20px;
+
+        .pro-box {
+            display: flex;
+            justify-content: space-between;
+            .pro-name {
+                .ch-name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #6c6578;
+                }
+                .en-name {
+                    margin-top: 5px;
+                    color: #999;
+                }
+            }
+            .pro-price {
+                font-size: 18px;
+                font-weight: bold;
+                color: #71210e;
+            }
+        }
+
+        .rules {
+            margin-top: 30px;
+            .rule {
+                display: flex;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                .rule-title {
+                    width: 60px;
+                    height: 28px;
+                    line-height: 28px;
+                    font-size: 14px;
+                    color: #666666;
+                }
+                .rule-items {
+                    display: flex;
+                    >div {
+                        width: 60px;
+                        text-align: center;
+                        height: 28px;
+                        line-height: 28px;
+                        color: #666666;
+                        background-color: #e8e8e8;
+                        border-radius: 14px;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                        &.active {
+                            background-color: #71210e;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .count-box {
+            margin: 20px 0px;
+            padding: 20px 0px;
+            border-top: 1px solid #f3f3f3;
+            border-bottom: 1px solid #f3f3f3;
+            display: flex;
+            justify-content: space-between;
+            .count-title {
+                font-size: 14px;
+                color: #666666;
+            }
+            /deep/ .van-stepper--round .van-stepper__minus {
+                color: #71210e;
+                border-color: #71210e;
+            }
+        }
+
+        .desc {
+
+            .desc-title {
+                font-size: 14px;
+                color: #666666;
+            }
+            .desc-text {
+                margin-top: 10px;
+                font-size: 12px;
+                color: #999;
+                >div {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

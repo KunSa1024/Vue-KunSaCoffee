@@ -1,0 +1,52 @@
+.orderItem {
+    display: flex;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    .img-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .content-box {
+        margin-left: 10px;
+        width: 210px;
+        .title-box {
+            display: flex;
+            .chname {
+                font-size: 14px;
+                color: #555;
+            }
+
+            .specifications {
+                font-size: 12px;
+                color: #999;
+                margin-left: 20px;
+            }
+        }
+
+        .enname {
+            font-size: 14px;
+            color: #999;
+            margin-top: 3px;
+        }
+
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .price {
+                font-size: 14px;
+                font-weight: bold;
+                color: #71210e;
+            }
+
+            .number {
+                font-size: 12px;
+                color: #333;
+            }
+        }
+    }
+}

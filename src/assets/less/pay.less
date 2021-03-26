@@ -1,0 +1,146 @@
+.pay {
+    padding-bottom: 67px;
+    
+    /deep/ .van-nav-bar .van-icon,
+    /deep/ .van-nav-bar__text {
+        color: #71210e;
+    }
+
+
+    .pay-box {
+        padding: 10px;
+
+        .select-address-box {
+            background-color: #fff;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            .select {
+                color: #666;
+                font-size: 14px;
+                display: flex;
+                line-height: 19px;
+
+                /deep/ .van-icon-arrow::before {
+                    line-height: 19px;
+                    margin-left: 5px;
+                }
+            }
+
+            .address-box {
+                margin-top: 20px;
+                .name-box {
+                    display: flex;
+                    .name {
+                        color: #71210e;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                    .telephone-number {
+                        font-size: 14px;
+                        color: #666;
+                        margin: 0 20px;
+                    }
+
+                    .default {
+                        background-color: #71210e;
+                        color: #fff;
+                        font-size: 12px;
+                        padding: 2px 8px;
+                        border-radius: 22px;
+                    }
+                }
+
+                .address {
+                    font-size: 14px;
+                    color: #999;
+                    margin-top: 10px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;  // 最多显示两行
+                    -webkit-box-orient: vertical;   // ...隐藏
+                    overflow: hidden; // 溢出隐藏
+                }
+            }
+        }
+    }
+
+
+    .pey-info {
+        background-color: #fff;
+        margin: 0px 10px 10px 10px;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .address-boxing {
+        position: relative;
+        padding: 20px 20px 0px 20px;
+
+        .select-address {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 16px;
+            color: #444;
+        }
+
+        /deep/ .van-address-list {
+            padding-top: 30px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        /deep/ .van-address-item {
+            padding-left: 0px;
+            padding-right: 0px;
+            border-bottom: 1px solid #eee;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        /deep/ .van-tag--danger {
+            background-color: #71210e;
+        }
+
+        /deep/ .van-address-item .van-radio__icon--checked .van-icon,
+        /deep/ .van-button--danger {
+            background-color: #71210e;
+            border-color: #71210e;
+        }
+
+        /deep/ .van-address-item__edit {
+            display: none;
+        }
+
+        /deep/ .van-address-item__value {
+            padding-right: 0px;
+        }
+
+        /deep/ .van-address-item__address {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        /deep/ .van-radio__label {
+            display: block;
+            width: calc(100% - 20px);
+        }
+    }
+
+
+    .pay-btn {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+        width: calc(100% - 20px);
+        background-color: #f7f7f7;
+    }
+}

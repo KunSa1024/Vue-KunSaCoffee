@@ -1,0 +1,24 @@
+.collection {
+    /deep/ .van-nav-bar .van-icon,
+    /deep/ .van-nav-bar__text {
+        color: #71210e;
+    }
+
+    .product-items {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .product-item {
+            width: calc(50% - 5px);
+            margin-right: 10px;
+            &:nth-child(2n) {
+                margin-right: 0px;
+            }
+            .del {
+                color: #71210e;
+                font-size: 0.50667rem;
+                margin-left: 0.26667rem;
+            }
+        }
+    }
+}

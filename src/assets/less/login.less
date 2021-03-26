@@ -1,0 +1,155 @@
+.login {
+    width: 100%;
+    height: 667px;
+    background: url(../images/login_img/bg_img.jpg) no-repeat center center;
+    background-size: cover;
+
+    .login-box {
+        position: fixed;
+        top: 46px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        // background-color: #fff;
+        padding: 15px;
+        .login-title-box {
+            margin-top: 50px;
+            .login-title {
+                font-size: 26px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .login-sob-title {
+                margin-top: 20px;
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+
+        .btn-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 130px;
+            margin-top: 330px;
+        }
+    }
+    .register-box {
+        padding: 15px;
+        .register-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .register-form {
+            padding: 50px 0px;
+            // /deep/ 极限修改
+            /deep/ .van-cell {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+
+    // 登录框
+    /deep/ .van-popup--center {
+        width: calc(100% - 40px);
+    }
+    .sign-box {
+        padding: 10px;
+        .form-box {
+            margin-top: 30px;
+            
+            // /deep/ 极限修改
+            /deep/ .van-cell {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            /deep/ .van-field__label {
+                // color: #d0cdcc;
+            }
+        }
+        .forgot {
+            text-align: right;
+            margin-top: 10px;
+            color: #71210e;
+        }
+
+        .sign-btn {
+            margin-top: 20px
+        }
+    }
+
+    // 找回密码
+    /deep/ .van-button--primary {
+        background-color: #71210e;
+        border-color: #71210e;
+    }
+
+    /deep/ .van-field__button {
+        width: 86px;
+        height: 33px;
+    }
+
+    /deep/ .van-button--small {
+        width: 100%;
+    }
+
+    
+
+    .showMailbox-box {
+        padding: 10px;
+        padding-top: 50px;
+        position: relative;
+
+        .title {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .showMailbox-emailVerification {
+
+            .input-box {
+                
+            }
+
+            .text-box {
+                color: #71210e;
+                font-size: 14px;
+                text-align: right;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+
+            }
+        }
+
+        .showMailbox-newPassword {
+
+            .newPassword-input {
+
+            }
+
+            .text-box {
+                color: #71210e;
+                font-size: 14px;
+                text-align: right;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                height: 130px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+}

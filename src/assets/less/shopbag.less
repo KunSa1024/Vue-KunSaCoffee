@@ -1,0 +1,158 @@
+.shopbag {
+    padding-bottom: 50px;
+
+    /deep/ .van-nav-bar .van-icon {
+        color: #71210e;
+    }
+
+    /deep/ .van-nav-bar__text {
+        color: #71210e;
+    }
+
+    .edit {
+        color: #71210e;
+    }
+
+    .shopbag_bg {
+        height: 54px;
+        background: url(../images/shopbag_bg.png) no-repeat center center;
+        background-size: cover;
+    }
+
+    .shopbag-box {
+        padding: 10px;
+
+        .shopbag-cell {
+            margin-bottom: 10px;
+
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+
+
+            .shopbag-item {
+                display: flex;
+                padding: 10px;
+                background-color: #fff;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+
+                .check {
+                    width: 22px;
+                    height: 22px;
+                    margin-top: 28px;
+
+                    /deep/ .van-checkbox__icon--checked .van-icon {
+                        background-color: #71210e;
+                        border-color: #71210e;
+                    }
+                }
+
+                .pro-info {
+                    height: 80px;
+                    display: flex;
+                    width: calc(100% - 34px);
+
+                    .pro-img {
+                        width: 80px;
+                        margin-left: 10px;
+                    }
+
+                    .pro-text {
+                        width: calc(100% - 90px);
+                        height: 80px;
+                        margin-left: 10px;
+
+                        .text-box {
+                            .pro-names {
+                                display: flex;
+
+                                .pro-name {
+                                    font-size: 16px;
+                                    color: #68696a;
+                                    margin-right: 15px;
+                                }
+
+                                .pro-rule {
+                                    font-size: 14px;
+                                    color: #9c9c9c;
+                                }
+                            }
+
+                            .pro-enname {
+                                font-size: 14px;
+                                color: #9c9c9c;
+                                margin-top: 5px;
+                            }
+                        }
+
+                        .count-box {
+                            display: flex;
+                            margin-top: 5px;
+
+                            .pro-price {
+                                line-height: 30px;
+                                color: #71210e;
+                                font-weight: bold;
+                                font-size: 14px;
+                                margin-right: auto;
+                            }
+
+                            .pro-count {
+                                padding-top: 4px;
+
+                                /deep/ .van-stepper--round .van-stepper__minus {
+                                    color: #71210e !important;
+                                    border-color: #71210e !important;
+                                }
+
+                                /deep/ .van-stepper--round .van-stepper__plus {
+                                    background-color: #71210e !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .goods-card {
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .delete-button {
+            height: 100%;
+        }
+
+    }
+
+    /deep/ .van-submit-bar {
+        bottom: 50px;
+    }
+
+    /deep/ .van-submit-bar__price {
+        color: #71210e;
+    }
+
+    /deep/ .van-checkbox__icon--checked .van-icon {
+        background-color: #71210e;
+        border-color: #71210e;
+    }
+
+    .guang {
+        color: #fff;
+        font-size: 14px;
+        width: 60px;
+        height: 28px;
+        background-color: #71210e;
+        text-align: center;
+        line-height: 28px;
+        border-radius: 14px;
+    }
+
+    /deep/ .van-submit-bar__bar {
+        justify-content: space-between;
+    }
+}

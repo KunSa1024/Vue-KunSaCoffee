@@ -1,0 +1,51 @@
+.products {
+    margin: 10px;
+
+    .product {
+        background-color: #fff;
+        padding: 10px;
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        .img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .title-box {
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% - 110px);
+            margin: auto 0;
+            margin-left: 10px;
+            margin-right: 20px;
+
+            .title {
+                text-align: left;
+                color: #333;
+
+                .name {
+                    font-size: 16px;
+                }
+
+                .enname {
+                    margin-top: 10px;
+                    font-size: 14px
+                }
+            }
+
+            .price {
+                font-size: 14px;
+                font-weight: bold;
+                color: #71210e;
+                margin: auto 0;
+            }
+        }
+    }
+}
